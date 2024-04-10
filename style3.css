@@ -1,0 +1,198 @@
+body {
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  header {
+    background: #000000;
+    color: #ffffff;
+    height: 40px;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(234, 76, 76);
+    cursor: pointer;
+  }
+  
+  /*========= 検索窓のためのCSS ===============*/
+  
+  /*検索窓のエリア*/
+  #search-wrap {
+    position: absolute;/*絶対配置にして*/
+    z-index: 2;/*最前面に設定。数字は変更可*/
+    top:0px;
+    right:10px;
+  }
+  
+  /*テキスト入力input設定*/
+  #search-text{
+   width: 40px;/*テキスト入力エリアが伸びる前の横幅*/
+   height: 2px;
+   padding: 20px;
+   border: none;
+   background:#fff url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-3/img/icon_search.svg") no-repeat 19px center;/*虫眼鏡アイコンを背景に表示*/
+   background-size: 25px 25px;
+   transition: all 0.5s;/*transitionを使ってスムースに伸ばす*/
+   outline: none;
+   cursor: pointer;/*カーソルを指マークに*/
+  }
+  
+  /*テキスト入力inputにフォーカスした時の形状*/
+  #search-text:focus {
+   width: 250px;/*テキスト入力エリアが伸びる後の横幅*/
+   padding: 20px 0 20px 60px;
+   box-shadow: 0 2px rgba(6,0,1,.26);
+  }
+  
+  .choice{
+    position: relative;
+  height: 80px;
+  background: #fffdfd;
+  }
+  
+  .content {
+    margin-top: 60px; /* ヘッダーの高さに合わせて調整 */
+    margin-bottom: 100px; /* フッターの高さに合わせて調整 */
+  }
+  
+  /* こっからmain */
+  
+  main {
+    background: #ffffff;
+    flex: 1;
+  }
+  
+  /* フード、メニュー、セットボタンのとこ */
+  .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  
+  ul li:last-child {
+    margin-right: 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .container {
+    text-align: center;
+    
+  }
+  /* ここまで */
+  
+  /* フードテーブル */
+  .food {
+    width: 100%;
+    max-width: 800px; /* 任意の幅を指定してください */
+    margin: 0 auto;
+    /* その他のスタイルプロパティを必要に応じて追加してください */
+  }
+  
+  .food table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .food th {
+    border: 1px solid black;
+  padding: 8px;
+  }
+  
+  .food td {
+    border: 1px solid black;
+  padding: 8px;
+  }
+  
+  .food button {
+    width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+    background-color: #ffc0cb;
+    color: #000000;
+  }
+  tr.a:nth-child(even) {
+  background: #EBEBEB;
+  }
+  
+  tr.a:nth-child(odd) {
+  background: #ffffff;
+  }
+  .content1 button {
+    margin-top: 10px;
+    width: 100px; /* ボタンの幅を指定 */
+    height: 50px; /* ボタンの高さを指定 */
+  }
+  
+  .content2 button {
+    margin-top: 10px;
+    width: 100px; /* ボタンの幅を指定 */
+    height: 50px; /* ボタンの高さを指定 */
+  }
+  
+  .content3 button {
+    margin-left: 15px; /* 画像からの距離を調整 */
+    margin-top: 10px;
+    width: 100px; /* ボタンの幅を指定 */
+    height: 50px; /* ボタンの高さを指定 */
+  }
+  
+  
+  .content2 p {
+    text-align: right;
+  }
+  
+  #table2 {
+    background-color: #dcdcdc;
+  }
+  
+  table{
+    margin: auto;
+  }
+  /* ここまで */
+  
+  
+  footer {
+    background: #E4C8C8;
+    color: #ffffff;
+    height: 90px;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+  

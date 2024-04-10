@@ -1,0 +1,125 @@
+/*記述がないものは全ページ共通*/
+
+/*========= 検索窓のためのCSS ===============*/
+
+/*検索窓のエリア*/
+#search-wrap {
+    position: absolute;/*絶対配置にして*/
+    z-index: 2;/*最前面に設定。数字は変更可*/
+    top:0px;
+    right:10px;
+}
+
+/*テキスト入力input設定*/
+#search-text{
+   width: 40px;/*テキスト入力エリアが伸びる前の横幅*/
+   height: 2px;
+   padding: 20px;
+   border: none;
+   background:#fff url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-3/img/icon_search.svg") no-repeat 19px center;/*虫眼鏡アイコンを背景に表示*/
+   background-size: 25px 25px;
+   transition: all 0.5s;/*transitionを使ってスムースに伸ばす*/
+   outline: none;
+   cursor: pointer;/*カーソルを指マークに*/
+}
+
+/*テキスト入力inputにフォーカスした時の形状*/
+#search-text:focus {
+   width: 250px;/*テキスト入力エリアが伸びる後の横幅*/
+   padding: 20px 0 20px 60px;
+   box-shadow: 0 2px rgba(6,0,1,.26);
+}
+
+.choice{
+    position: relative;
+ height: 80px;
+ background: #fffdfd;
+}
+
+.content {
+    margin-top: 60px; /* ヘッダーの高さに合わせて調整 */
+    margin-bottom: 100px; /* フッターの高さに合わせて調整 */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #000000;
+    color: #ffffff;
+    height: 40px;
+}
+main {
+    background: #ffffff;
+    flex: 1;
+
+}
+
+/*home.html*/
+.home{
+    position: relative;
+	height: 250px;
+	background: #FAE9E9;
+}
+.homemenucd{
+    align-items: center;
+}
+
+/*tyuumonkansei.html*/
+div.radius1 {
+    border: 5px solid #e4e4e4;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 180px;
+    padding: 80px;
+    display: inline-block;
+    margin-top: 100px;
+   }
+
+/*order.html*/
+.flex{
+    display: flex; 
+}
+
+/*order.html*/
+.kakutei{
+    background-color: #E4C8C8;
+    border: #b99898;
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 40px;
+    margin-left: 20px;
+  }
+
+  th,td{
+    border: solid 1px; 
+  }
+table.order-table{
+    border-collapse:  collapse;
+    width:  100%;
+    table-layout: fixed; 
+}
+
+/*orderfinish.html*/
+div.finish {
+    background-color: #ffffff;
+    border: 10px solid #e4e4e4;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 470px;
+    display: inline-block;
+    margin-top: 100px;
+   }
+
+footer {
+    background: #E4C8C8;
+    color: #ffffff;
+    height: 90px;
+}

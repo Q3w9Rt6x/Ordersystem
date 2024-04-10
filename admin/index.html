@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-13xxxxxxxxx');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>管理画面ログイン</title>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="shop.css">
+    </head>
+    
+    <body>
+        <div class="login-wrapper" id="login">
+            <div class="container">
+                <div class="login">
+                    <div class="login-wrapper-title">
+                        <h3>ログイン</h3>
+                    </div>
+                    <form class="login-form" action="shopcheck.php" method="POST">
+                        <div class="form-group">
+                            <p>メールアドレス</p>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <p>パスワード</p>
+                            <input type="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">ログイン</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
